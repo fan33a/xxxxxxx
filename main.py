@@ -9,11 +9,12 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 client = discord.Client()
 
 @client.event
-async def on_connect():
-  await client.change_presence(activity = discord.Game(name = "Hi!"))
-
-@client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
+
+@client.event
+async def on_connect():
+  await client.change_presence(activity = discord.Streaming(name = "idc.", url = "https://www.twitch.tv/Fan3a"))
+
 
 client.run(TOKEN)
