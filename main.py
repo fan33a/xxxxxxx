@@ -4,7 +4,7 @@ import discord
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.getenv('Fan3a')
 
 client = discord.Client()
 
@@ -17,4 +17,4 @@ async def on_connect():
   await client.change_presence(activity = discord.Streaming(name = "ملل😴", url = "https://www.twitch.tv/Fan3a"))
 
 
-client.run(TOKEN)
+client.run(Fan3a)
