@@ -8,6 +8,11 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
 
+@client.event
+async def on_connect():
+  await client.change_presence(activity = discord.Game(name = "Hi!"))
+
+
 @clientevent
 async def on_message(message):
     if message.author == client.user:
