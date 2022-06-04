@@ -14,7 +14,7 @@ async def on_ready():
 
 @client.event
 async def on_connect():
-  await client.change_presence(activity = discord.Streaming(name = "idc.", url = "https://www.twitch.tv/Fan3a"))
+  await client.change_presence(activity = discord.Streaming(name = "ملل😴", url = "https://www.twitch.tv/Fan3a"))
 
 
 client.run(TOKEN)
